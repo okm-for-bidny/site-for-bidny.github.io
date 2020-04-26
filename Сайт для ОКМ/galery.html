@@ -1,0 +1,99 @@
+<html>
+ <head>
+  <link rel="shortcut icon" href="images/logo.png" type="image/png">
+  <meta content="text/html; charset=utf-8">
+  <title>Архітектура світу</title>
+  <link rel="stylesheet" type="text/css" href="css/css.css" />
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="js/js.js"></script>
+  <style type="text/css">
+a img { border:none;}
+#galleryl { width:663px;
+			height:400px;
+			overflow:hidden;
+			position:relative;
+			z-index:1;
+margin:60px auto;
+    border-radius: 8px;
+     box-shadow:0px 0px 5px black;
+
+}
+#tabs1 { list-style:none;
+			padding:0px;
+			margin:0px;
+			width:130px;
+			height:400px;
+			float:left
+}
+#tabs1 li { padding:0px;
+			margin:0px;
+			float:left; cursor:pointer;
+            border-radius: 8px;
+}
+#tabs1 li a img { display:block;
+			width:120px;
+			height:90px;
+			}
+#tabs1 li a { display:block;
+			border:5px solid  #CCC;
+			width:120px;
+			height:90px;
+            transition: .4s;
+			
+}
+#tabs1 li a img.fullpic, #galleryl div { 
+position:absolute;
+z-index:1;
+top:0px;
+left:130px;
+width:533px;
+height:400px;}
+ 
+ #galleryl div { z-index:2;
+ 				background:#CCC;}
+#tabs1 li a:hover { border:#FFF solid 5px;}
+#tabs1 li a:hover img.fullpic { z-index:3;}   
+  </style>
+ </head>
+
+ <body bgcolor="#c0c0c0">
+    <ul class="menu">
+        <li><a href="index.html" >Головна</a></li>
+        <li><a href="info.html">Інформація</a></li>
+        <li class="current"><a href="galery.html">Галерея</a></li>
+        <li><a href="contact.html">Контаки</a></li>
+    </ul>
+
+<br>
+
+<div class="main">
+
+<h1 align="center">Галерея</h1>
+
+<div id="galleryl">
+<ul id="tabs1">
+<li><a><img src="images/5.jpg" ><img src="images/5.jpg" class="fullpic"></a></li>
+<li><a><img src="images/10.jpg" ><img src="images/10.jpg" class="fullpic"></a></li>
+<li><a><img src="images/7.jpg" ><img src="images/7.jpg" class="fullpic"></a></li>
+<li><a><img src="images/8.jpg" ><img src="images/8.jpg" class="fullpic"></a></li>
+</ul>
+<div></div>
+</div>
+
+</div>
+
+
+ 
+ <a href="javascript://0" onclick="slowScroll ('#up')" id="gototop"><div>&uarr;</div></a>
+<div class="footer">
+
+	<section id="subscribe" class="small-section">
+		<h2 class="section-title-smb align-center">Ви можете підписатися</h2>
+		<center>
+			<input type="text" placeholder="Ваш e-mail:">
+			<a href="#" class="subscribe-btn" onClick="alert('Ви підписалися на розсилку')">Підписатися</a>
+		</center>
+	</section>
+</div>
+ </body>
+</html>
